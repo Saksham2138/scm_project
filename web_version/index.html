@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <p>Balance: <input type="number" id="balance" value="1000" min="0"></p>
+            <p>Lines to bet on: <input type="number" id="lines" value="1" min="1" max="3"></p>
+            <p>Betting amount per line: <input type="number" id="bet" value="1" min="1" max="1000"></p>
+        </div>
+        <div id="slot-machine">
+            <!-- Slot machine will be rendered here -->
+        </div>
+        <div id="results">
+            <p id="winnings">Winnings: $0</p>
+            <p id="remaining-balance">Remaining Balance: $1000</p>
+        </div>
+        <div class="controls">
+            <button id="spinButton">Spin</button>
+            <button id="quitButton">Quit</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
 
